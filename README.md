@@ -35,9 +35,9 @@
 
 Схема такая:
 * Вешаем обработчик события `submit` на форму;
-* Отправляем `fetch` на ручку аутентификации (не забудьте про [`credentials: 'include'`](https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials));
-* Если ответ от ручки `200`, то делаем `location.assign('/моя-ручка')`;
-* Если ответ от ручки `401`, то выводим ошибку.
+* Отправляем `fetch` на роут аутентификации (не забудьте про [`credentials: 'include'`](https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials));
+* Если ответ от роута `200`, то делаем `location.assign('/мой-роут')`;
+* Если ответ от роута `401`, то выводим ошибку.
 
 Не усложняйте аутентификацию, client handlebars использовать не нужно.
 
